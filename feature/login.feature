@@ -6,6 +6,7 @@
         When I login wuth "<username>" and "<password>"
         Then I should see a message saying "<message>"
 
+
         Examples:
         | username | password             | message                        |
         | tomsmith | SuperSecretPassword! | You logged into a secure area! |

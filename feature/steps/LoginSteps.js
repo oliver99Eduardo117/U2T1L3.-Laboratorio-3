@@ -12,13 +12,14 @@ Given('I am on the {string} page', async function(string) {
 
     await this.driver.get(`https://the-internet.herokuapp.com/${string}`);
 });
-
+ 
 
 When('I login wuth {string} and {string}', async function(username, password) {
     this.driver.findElement(By.id("username")).sendKeys(username);
     this.driver.findElement(By.id("password")).sendKeys(password);
     this.driver.findElement(By.className("radius")).click();
 });
+
 
 
 Then('I should see a message saying {string}', async function(string) {
